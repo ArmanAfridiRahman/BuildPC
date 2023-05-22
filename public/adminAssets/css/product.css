@@ -1,0 +1,415 @@
+/*
+    Post No Bills Jaffna Fonts
+ */
+@font-face {
+  font-family: "pnbj-Regular";
+  src: url("fonts/PostNoBillsJaffna-Regular.woff");
+}
+@font-face {
+  font-family: "pnbj-Light";
+  src: url("fonts/PostNoBillsJaffna-Light.woff");
+}
+@font-face {
+  font-family: "pnbj-Medium";
+  src: url("fonts/PostNoBillsJaffna-Medium.woff");
+}
+@font-face {
+  font-family: "pnbj-SemiBold";
+  src: url("fonts/PostNoBillsJaffna-SemiBold.woff");
+}
+@font-face {
+  font-family: "pnbj-Bold";
+  src: url("fonts/PostNoBillsJaffna-Bold.woff");
+}
+@font-face {
+  font-family: "pnbj-ExtraBold";
+  src: url("fonts/PostNoBillsJaffna-ExtraBold.woff");
+}
+/*
+    Mada Fonts
+ */
+@font-face {
+  font-family: "Mada-Regular";
+  src: url("fonts/Mada-Regular.woff");
+}
+@font-face {
+  font-family: "Mada-Light";
+  src: url("fonts/Mada-Light.woff");
+}
+@font-face {
+  font-family: "Mada-Medium";
+  src: url("fonts/Mada-Medium.woff");
+}
+@font-face {
+  font-family: "Mada-ExtraLight";
+  src: url("fonts/Mada-ExtraLight.woff");
+}
+@font-face {
+  font-family: "Mada-SemiBold";
+  src: url("fonts/Mada-SemiBold.woff");
+}
+@font-face {
+  font-family: "Mada-Bold";
+  src: url("fonts/Mada-Bold.woff");
+}
+@font-face {
+  font-family: "Mada-Black";
+  src: url("fonts/Mada-Black.woff");
+}
+body {
+  background-color: #212121;
+  overflow: hidden;
+}
+body .create-product {
+  overflow-y: scroll;
+  background-color: #2c2c2c;
+  height: 33rem;
+  width: 92%;
+  border-radius: 20px;
+}
+body .create-product p {
+  text-align: center;
+  font-family: "Mada-SemiBold";
+  font-size: 20px;
+  grid-column: 1/span 2;
+  padding-top: 2rem;
+}
+body .create-product form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body .create-product form .left {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 3rem 4rem;
+}
+body .create-product form .left .form-control {
+  cursor: pointer;
+  appearance: none;
+  border: 3px solid #7C44C8;
+  width: 19.5rem;
+  height: 3.5rem;
+  border-radius: 50px;
+  color: #ffffff;
+  padding-left: 1.5rem;
+  background-color: #212121;
+  margin-bottom: 1rem;
+  font-family: "Mada-Light";
+  font-size: 25px;
+  outline: none;
+}
+body .create-product form .left .form-control option {
+  color: #ffffff;
+}
+body .create-product form .left .single-picture .form-control {
+  padding: 0.6rem 2rem;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+body .create-product form .left .single-picture .form-control::-webkit-file-upload-button {
+  border-radius: 50px;
+  margin-right: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+body .create-product form .left .single-picture img {
+  width: 390px;
+}
+body .create-product form .right {
+  padding: 3rem 3rem 3rem 1rem;
+}
+body .create-product form .right .multiple-picture .form-control {
+  cursor: pointer;
+  border: 3px solid #777777;
+  width: 19.5rem;
+  height: 3.5rem;
+  border-radius: 50px;
+  font-family: "Mada-Light";
+  padding: 0.6rem 2rem;
+  font-size: 20px;
+  margin-top: 1rem;
+  float: left;
+  margin-right: 1rem;
+}
+body .create-product form .right .multiple-picture .form-control::-webkit-file-upload-button {
+  border-radius: 50px;
+  margin-right: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+body .create-product form .right .multiple-picture .images {
+  width: 15rem;
+  height: 10rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body .create-product form .right .multiple-picture .images img {
+  margin-bottom: 1rem;
+  width: 200px;
+}
+body .create-product form .right .multiple-picture .images::-webkit-scrollbar {
+  width: 16px;
+}
+body .create-product form .right .multiple-picture .images::-webkit-scrollbar-track {
+  background-color: #D9D9D9;
+  border-radius: 8px;
+}
+body .create-product form .right .multiple-picture .images::-webkit-scrollbar-thumb {
+  background-color: #7C44C8;
+  border-radius: 8px;
+  border: 4px solid #D9D9D9;
+}
+body .create-product form .right .main {
+  position: relative;
+  margin-bottom: 2rem;
+}
+body .create-product form .right .main input {
+  height: 3.5rem;
+  width: 34rem;
+  border: 3px solid #777777;
+  border-radius: 50px;
+  background-color: #2c2c2c;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  font-size: 25px;
+  padding-top: 4px;
+  font-family: "Mada-Light";
+  outline: none;
+}
+body .create-product form .right .main label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+body .create-product form .right .main label .text {
+  font-family: "Mada-Light";
+  font-size: 25px;
+  transition: all 0.15s ease-out;
+}
+body .create-product form .right .main input:focus {
+  outline: none;
+  border: 4px solid #7C44C8;
+  box-shadow: none;
+}
+body .create-product form .right .main input:focus + label .text, body .create-product form .right .main :not(input[value=""]) + label .text {
+  font-size: 20px;
+  outline: none;
+  transform: translate(0, -130%);
+  background-color: #2c2c2c;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+body .create-product form .right .secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .create-product form .right .secondary .two, body .create-product form .right .secondary .three, body .create-product form .right .secondary .four, body .create-product form .right .secondary .five {
+  margin-right: 2rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+body .create-product form .right .secondary .two input, body .create-product form .right .secondary .three input, body .create-product form .right .secondary .four input, body .create-product form .right .secondary .five input {
+  height: 3rem;
+  width: 16rem;
+  border: 3px solid #777777;
+  border-radius: 50px;
+  background-color: #2c2c2c;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  font-size: 20px;
+  padding-top: 4px;
+  font-family: "Mada-Light";
+}
+body .create-product form .right .secondary .two label, body .create-product form .right .secondary .three label, body .create-product form .right .secondary .four label, body .create-product form .right .secondary .five label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+body .create-product form .right .secondary .two label .text, body .create-product form .right .secondary .three label .text, body .create-product form .right .secondary .four label .text, body .create-product form .right .secondary .five label .text {
+  font-family: "Mada-Light";
+  font-size: 20px;
+  transition: all 0.15s ease-out;
+}
+body .create-product form .right .secondary .two input:focus, body .create-product form .right .secondary .three input:focus, body .create-product form .right .secondary .four input:focus, body .create-product form .right .secondary .five input:focus {
+  outline: none;
+  border: 4px solid #7C44C8;
+  box-shadow: none;
+}
+body .create-product form .right .secondary .two input:focus + label .text, body .create-product form .right .secondary .two :not(input[value=""]) + label .text, body .create-product form .right .secondary .three input:focus + label .text, body .create-product form .right .secondary .three :not(input[value=""]) + label .text, body .create-product form .right .secondary .four input:focus + label .text, body .create-product form .right .secondary .four :not(input[value=""]) + label .text, body .create-product form .right .secondary .five input:focus + label .text, body .create-product form .right .secondary .five :not(input[value=""]) + label .text {
+  font-size: 18px;
+  transform: translate(0, -120%);
+  background-color: #2c2c2c;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+body .create-product form .descriptions {
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  grid-column: 1/span 2;
+}
+body .create-product form .descriptions .short {
+  margin-bottom: 2rem;
+  width: 59rem;
+  height: 8.5rem;
+  border-radius: 30px;
+  border: 6px solid #777777;
+  padding: 1rem 2rem 1rem 2rem;
+}
+body .create-product form .descriptions .short .short-description {
+  border: none;
+  background-color: transparent;
+  font-family: "Mada-Light";
+  height: 6rem;
+  width: 54rem;
+  padding-right: 1rem;
+  resize: none;
+}
+body .create-product form .descriptions .short .short-description:focus {
+  outline: none;
+}
+body .create-product form .descriptions .short .short-description::placeholder {
+  font-size: 20px;
+  color: #B1B1B1;
+}
+body .create-product form .descriptions .short .short-description::-webkit-scrollbar {
+  width: 16px;
+}
+body .create-product form .descriptions .short .short-description::-webkit-scrollbar-track {
+  background-color: #D9D9D9;
+  border-radius: 8px;
+}
+body .create-product form .descriptions .short .short-description::-webkit-scrollbar-thumb {
+  background-color: #7C44C8;
+  border-radius: 8px;
+  border: 4px solid #D9D9D9;
+}
+body .create-product form .descriptions .long {
+  margin-bottom: 3rem;
+  width: 59rem;
+  height: 19rem;
+  border-radius: 30px;
+  border: 6px solid #7C44C8;
+  padding: 1rem 2rem 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .create-product form .descriptions .long .long-description-one {
+  border: none;
+  background-color: transparent;
+  font-family: "Mada-Light";
+  height: 16rem;
+  width: 25rem;
+  padding-right: 1rem;
+  resize: none;
+  margin-right: 3rem;
+  font-size: 30px;
+}
+body .create-product form .descriptions .long .long-description-one:focus {
+  outline: none;
+}
+body .create-product form .descriptions .long .long-description-one::placeholder {
+  font-size: 30px;
+  color: #B1B1B1;
+}
+body .create-product form .descriptions .long .long-description-one::-webkit-scrollbar {
+  width: 16px;
+}
+body .create-product form .descriptions .long .long-description-one::-webkit-scrollbar-track {
+  background-color: #D9D9D9;
+  border-radius: 8px;
+}
+body .create-product form .descriptions .long .long-description-one::-webkit-scrollbar-thumb {
+  background-color: #7C44C8;
+  border-radius: 8px;
+  border: 4px solid #D9D9D9;
+}
+body .create-product form .descriptions .long .long-description-two {
+  border: none;
+  background-color: transparent;
+  font-family: "Mada-Light";
+  height: 16rem;
+  width: 25rem;
+  padding-right: 1rem;
+  resize: none;
+  font-size: 30px;
+}
+body .create-product form .descriptions .long .long-description-two:focus {
+  outline: none;
+}
+body .create-product form .descriptions .long .long-description-two::placeholder {
+  font-size: 30px;
+  color: #B1B1B1;
+}
+body .create-product form .descriptions .long .long-description-two::-webkit-scrollbar {
+  width: 16px;
+}
+body .create-product form .descriptions .long .long-description-two::-webkit-scrollbar-track {
+  background-color: #D9D9D9;
+  border-radius: 8px;
+}
+body .create-product form .descriptions .long .long-description-two::-webkit-scrollbar-thumb {
+  background-color: #7C44C8;
+  border-radius: 8px;
+  border: 4px solid #D9D9D9;
+}
+body .create-product form .descriptions .product-buttons {
+  display: flex;
+}
+body .create-product form .descriptions .product-buttons .create {
+  border-radius: 50px;
+  margin-right: 2rem;
+  width: 8rem;
+  height: 3rem;
+  background-color: #212121;
+  margin-bottom: 2rem;
+  font-size: 25px;
+  font-family: "Mada-SemiBold";
+  cursor: pointer;
+}
+body .create-product form .descriptions .product-buttons .create:hover {
+  border: 4px solid #7C44C8;
+  transition: all 0.15s ease-out;
+}
+body .create-product form .descriptions .product-buttons .reset {
+  border-radius: 50px;
+  width: 8rem;
+  height: 3rem;
+  background-color: #212121;
+  margin-bottom: 2rem;
+  font-size: 25px;
+  font-family: "Mada-SemiBold";
+  cursor: pointer;
+}
+body .create-product form .descriptions .product-buttons .reset:hover {
+  border: 4px solid #CE2A2A;
+  transition: all 0.15s ease-out;
+}
+body .create-product::-webkit-scrollbar {
+  width: 16px;
+}
+body .create-product::-webkit-scrollbar-track {
+  background-color: #D9D9D9;
+  border-radius: 8px;
+}
+body .create-product::-webkit-scrollbar-thumb {
+  background-color: #7C44C8;
+  border-radius: 8px;
+  border: 4px solid #D9D9D9;
+}
+
+/*# sourceMappingURL=product.css.map */

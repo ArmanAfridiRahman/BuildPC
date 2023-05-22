@@ -1,0 +1,157 @@
+/*
+    Post No Bills Jaffna Fonts
+ */
+@font-face {
+    font-family: "pnbj-Regular";
+    src: url("fonts/PostNoBillsJaffna-Regular.woff");
+}@font-face {
+    font-family: "pnbj-Light";
+    src: url("fonts/PostNoBillsJaffna-Light.woff");
+}@font-face {
+    font-family: "pnbj-Medium";
+    src: url("fonts/PostNoBillsJaffna-Medium.woff");
+}@font-face {
+    font-family: "pnbj-SemiBold";
+    src: url("fonts/PostNoBillsJaffna-SemiBold.woff");
+}@font-face {
+    font-family: "pnbj-Bold";
+    src: url("fonts/PostNoBillsJaffna-Bold.woff");
+}@font-face {
+    font-family: "pnbj-ExtraBold";
+    src: url("fonts/PostNoBillsJaffna-ExtraBold.woff");
+}
+
+/*
+    Mada Fonts
+ */
+@font-face {
+    font-family: "Mada-Regular";
+    src: url("fonts/Mada-Regular.woff");
+}@font-face {
+    font-family: "Mada-Light";
+    src: url("fonts/Mada-Light.woff");
+}@font-face {
+    font-family: "Mada-Medium";
+    src: url("fonts/Mada-Medium.woff");
+}@font-face {
+    font-family: "Mada-ExtraLight";
+    src: url("fonts/Mada-ExtraLight.woff");
+}@font-face {
+    font-family: "Mada-SemiBold";
+    src: url("fonts/Mada-SemiBold.woff");
+}@font-face {
+    font-family: "Mada-Bold";
+    src: url("fonts/Mada-Bold.woff");
+}@font-face {
+    font-family: "Mada-Black";
+    src: url("fonts/Mada-Black.woff");
+}
+
+
+.sidebar {
+    background-color: #212121;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    padding-left: 1rem;
+    left: 0;
+    top: 0;
+    font-family: "Mada-Medium";
+
+    .sidebar-brand {
+        position: relative;
+        margin: auto;
+        width: 50%;
+        padding: 3rem 10px 1rem 10px;
+
+        img{
+            position: fixed;
+            left: 2.6rem;
+            top: 3.6rem;
+        }
+        .brand-name {
+            position: fixed;
+            font-family: "pnbj-Bold";
+            font-size: 55px;
+        }
+    }
+    .main-list{
+        margin-top: 7rem;
+        ul {
+            li {
+                position: relative;
+                a {
+                    display: block;
+                    width: 240px;
+                    height: 2.6rem;
+                    text-align: left;
+                    margin: 1rem 0rem 0rem 1.6rem;
+                    padding: 0.1rem 0rem 0.5rem 1.5rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    transition: all 0.2s ease;
+                    .icon{
+                        position: relative;
+                        top: 7px;
+                        right: 5px;
+                    }
+                    .text {
+
+                        font-size: 20px;
+                        transition: all 0.2s ease;
+                    }
+                }
+            }
+            .sign-out-button{
+                top: 36rem;
+                position: fixed;
+            }
+            .setting_menu, .product_menu, .order_menu {
+                display: none;
+                ul {
+                    margin-bottom: 2rem;
+                    li {
+                        a {
+                            margin: 1rem 0rem 1rem 3rem;
+                            height: 2.2rem;
+                            width: 260px;
+                            background-color: transparent;
+                        }
+                        .text {
+                            font-size: 16px;
+                            transition: all 0.2s ease
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .text:hover,
+    .text:active,{
+        color: #7C44C8;
+    }
+
+    .main-list ul li a.a_parent.active{
+        background-color: #7C44C8;
+        border-radius: 50px;
+        transition: 0.5s ease-in-out;
+        .dashboard, .settings, .products, .orders, .sign-out{
+            background-color: transparent;
+            .text{
+                background-color: transparent;
+            }
+            .text:hover{
+                color: #ffffff;
+            }
+        }
+    }
+    .main-list ul li a.a_parent.active + .setting_menu{
+        display: block;
+    }
+    .main-list ul li a.a_parent.active + .product_menu {
+        display: block;
+    }
+    .main-list ul li a.a_parent.active + .order_menu {
+        display: block;
+    }
+}

@@ -1,0 +1,114 @@
+/*
+    Post No Bills Jaffna Fonts
+ */
+@font-face {
+  font-family: "pnbj-Regular";
+  src: url("fonts/PostNoBillsJaffna-Regular.woff");
+}
+@font-face {
+  font-family: "pnbj-Light";
+  src: url("fonts/PostNoBillsJaffna-Light.woff");
+}
+@font-face {
+  font-family: "pnbj-Medium";
+  src: url("fonts/PostNoBillsJaffna-Medium.woff");
+}
+@font-face {
+  font-family: "pnbj-SemiBold";
+  src: url("fonts/PostNoBillsJaffna-SemiBold.woff");
+}
+@font-face {
+  font-family: "pnbj-Bold";
+  src: url("fonts/PostNoBillsJaffna-Bold.woff");
+}
+@font-face {
+  font-family: "pnbj-ExtraBold";
+  src: url("fonts/PostNoBillsJaffna-ExtraBold.woff");
+}
+/*
+    Mada Fonts
+ */
+@font-face {
+  font-family: "Mada-Regular";
+  src: url("fonts/Mada-Regular.woff");
+}
+@font-face {
+  font-family: "Mada-Light";
+  src: url("fonts/Mada-Light.woff");
+}
+@font-face {
+  font-family: "Mada-Medium";
+  src: url("fonts/Mada-Medium.woff");
+}
+@font-face {
+  font-family: "Mada-ExtraLight";
+  src: url("fonts/Mada-ExtraLight.woff");
+}
+@font-face {
+  font-family: "Mada-SemiBold";
+  src: url("fonts/Mada-SemiBold.woff");
+}
+@font-face {
+  font-family: "Mada-Bold";
+  src: url("fonts/Mada-Bold.woff");
+}
+@font-face {
+  font-family: "Mada-Black";
+  src: url("fonts/Mada-Black.woff");
+}
+.header {
+  background-color: #212121;
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  left: 350px;
+  top: 0;
+  font-family: "Mada-Medium";
+  margin: auto;
+}
+.header .admin_container {
+  background-image: linear-gradient(45deg, #7C44C8, #383DAD);
+  border-radius: 50px;
+  position: relative;
+  top: 2.4rem;
+  left: 4rem;
+  height: 5rem;
+  width: 19rem;
+}
+.header .admin_container .icon {
+  position: fixed;
+  top: 3.3rem;
+  left: 22.5rem;
+}
+.header .admin_container ul {
+  position: fixed;
+  margin-top: 0.6rem;
+}
+.header .admin_container ul li {
+  margin: 1.2rem 0rem 0rem 5rem;
+  line-height: 0px;
+  font-family: "Mada-Regular";
+}
+.header .admin_container ul .title {
+  font-family: "Mada-Light";
+}
+.header .admin_container button {
+  position: relative;
+  color: #676767;
+  border: transparent;
+  background-color: white;
+  border-radius: 50px;
+  margin-left: 11.8rem;
+  margin-top: 1.4rem;
+  width: 6rem;
+  height: 2rem;
+  text-align: left;
+  padding-left: 1rem;
+  font-family: "Mada-Regular";
+}
+.header .admin_container button img {
+  position: fixed;
+  top: 4.3rem;
+}
+
+/*# sourceMappingURL=header.css.map */
